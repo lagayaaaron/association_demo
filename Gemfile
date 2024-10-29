@@ -48,7 +48,7 @@ group :development, :test do
 end
 
 group :development do
-  gem "faker", "~> 2.19"
+  gem "faker", "~> 3.5"
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 
