@@ -1,0 +1,25 @@
+<div class="container p-6 mx-auto">
+  <h1 class="mb-4 text-3xl font-bold text-gray-800">Authors</h1>
+  <table class="min-w-full bg-white border border-gray-200">
+    <thead>
+      <tr class="bg-gray-100">
+        <th class="px-4 py-2 border-b">Name</th>
+        <th class="px-4 py-2 border-b">Books</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @authors.each do |author| %>
+        <tr>
+          <td class="px-4 py-2 border-b"><%= author.name %></td>
+          <td class="px-4 py-2 border-b">
+            <ul>
+              <% author.books.each do |book| %>
+                <li><%= link_to book.title, book_path(book), class: "text-blue-500 hover:underline" %></li>
+              <% end %>
+            </ul>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

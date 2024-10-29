@@ -1,0 +1,6 @@
+<div class="container p-6 mx-auto">
+  <h1 class="mb-4 text-3xl font-bold text-gray-800">Appointment Details</h1>
+  <p>Patient: <%= @appointment.patient.name %></p>
+  <p>Physician: <%= @appointment.physician.name %></p>
+  <p>Appointment Date: <%= @appointment.appointment_date.strftime("%B %d, %Y at %I:%M %p") %></p>
+</div>

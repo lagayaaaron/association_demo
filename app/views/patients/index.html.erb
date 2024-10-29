@@ -1,0 +1,17 @@
+<div class="container p-6 mx-auto">
+  <h1 class="mb-4 text-3xl font-bold text-gray-800">Patients</h1>
+  <table class="min-w-full bg-white border border-gray-200">
+    <thead>
+      <tr class="bg-gray-100">
+        <th class="px-4 py-2 border-b">Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @patients.each do |patient| %>
+        <tr>
+          <td class="px-4 py-2 border-b"><%= patient.name %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

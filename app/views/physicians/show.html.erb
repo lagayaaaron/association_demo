@@ -1,0 +1,11 @@
+<div class="container p-6 mx-auto">
+  <h1 class="mb-4 text-3xl font-bold text-gray-800">Physician: <%= @physician.name %></h1>
+  <h2 class="mb-2 text-xl">Appointments</h2>
+  <ul>
+    <% @physician.appointments.each do |appointment| %>
+      <li>
+        Appointment with <%= appointment.patient.name %> on <%= appointment.appointment_date.strftime("%B %d, %Y at %I:%M %p") %>
+      </li>
+    <% end %>
+  </ul>
+</div>

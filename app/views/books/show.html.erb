@@ -1,0 +1,5 @@
+<div class="container p-6 mx-auto">
+  <h1 class="mb-4 text-3xl font-bold text-gray-800">Book: <%= @book.title %></h1>
+  <h2 class="mb-2 text-xl">Author: <%= @book.author.name if @book.author %></h2>
+  <p><%= @book.description %></p>
+</div>

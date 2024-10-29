@@ -1,0 +1,9 @@
+<div class="container p-6 mx-auto">
+  <h1 class="mb-4 text-3xl font-bold text-gray-800">Supplier: <%= @supplier.name %></h1>
+  <h2 class="mb-2 text-xl">Accounts</h2>
+  <ul>
+    <% @supplier.accounts.each do |account| %>
+      <li><%= account.name %></li>
+    <% end %>
+  </ul>
+</div>

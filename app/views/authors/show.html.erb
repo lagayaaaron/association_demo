@@ -1,0 +1,9 @@
+<div class="container p-6 mx-auto">
+  <h1 class="mb-4 text-3xl font-bold text-gray-800">Author: <%= @author.name %></h1>
+  <h2 class="mb-2 text-2xl font-semibold">Books</h2>
+  <ul>
+    <% @author.books.each do |book| %>
+      <li class="mb-1"><%= link_to book.title, book_path(book), class: "text-blue-500 hover:underline" %></li>
+    <% end %>
+  </ul>
+</div>
